@@ -1,0 +1,5 @@
+# Use an existing Caddy installation, with a domain pointing at this server.
+# The API remains authenticated; do not expose the Python port without HTTPS.
+gpu.example.com {
+    reverse_proxy 127.0.0.1:8010
+}
